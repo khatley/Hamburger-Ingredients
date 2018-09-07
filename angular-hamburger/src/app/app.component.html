@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<h2>My Favorite Hamburger Ingredient: {{favIng.name}}</h2>
+<p>Ingredients:</p>
+<ul>
+  <li *ngFor="let ingList of ingredients">
+    {{ingList.name}}
+  </li>
+</ul>
+<p *ngIf="ingredients.length > 3">There are many ingredients!</p>
